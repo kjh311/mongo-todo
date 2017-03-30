@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>MongoDB To Do</title>
+  <!-- BOOTSTRAP -->
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> 
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous"> 
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/jumbotron-narrow.css">
+ 
+</head>
+<body>
+
+<div class="container">
+      <div class="header clearfix">
+        <nav>
+          <ul class="nav nav-pills pull-right">
+            <li role="presentation"><a href="index.html">Home</a></li>
+            <li role="presentation" class="active"><a href="addTask.html">Add Task</a></li>
+            <li role="presentation"><a href="categories.html">Manage Categories</a></li>
+          </ul>
+        </nav>
+        <h3 class="text-muted">Task Manager</h3>
+      </div>
+
+
+
+      <div class="row marketing">
+
+
+        <div class="col-lg-12">
+          <h2 class="page-header">Add Task</h2>
+          <form id="add_task">
+            <div class="form-group">
+              <label>Task Name</label>
+              <input type="text" name="task_name" id="task_name" class="form-control" placeholder="Task Name">
+            </div>
+
+            <div class="form-group">
+              <label>Category</label>
+              <select name="category" id="category" class="form-control">
+
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label>Due Date</label>
+              <input type="date" name="due_date" id="due_date" class="form-control">
+            </div>
+
+            <div class="form-group">
+              <label>Urgent</label>
+              <select name="is_urgent" id="is_urgent" class="form-control">
+              <option value="false">No</option>
+              <option value="true">Yes</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+            
+          </form>
+        </div>
+      </div>
+
+      <footer class="footer">
+        <p>&copy; 2016 Company, Inc.</p>
+      </footer>
+
+    </div> <!-- /container -->
+  
+
+   <!-- JQUERY --> 
+<script
+  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
+  
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> 
+  <script src="js/script.js"></script>
+</body>
+</html>

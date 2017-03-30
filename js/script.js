@@ -196,6 +196,7 @@ function editCategory(e){
   e.preventDefault();
 }
 
+
 function deleteCategory (){
   var category_id = $(this).data('category-id');
     $.ajax({
